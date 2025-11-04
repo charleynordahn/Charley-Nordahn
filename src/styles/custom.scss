@@ -1,0 +1,151 @@
+// =============================================================================
+// IMPORTS
+// =============================================================================
+@import "font";
+
+// =============================================================================
+// VARIABLES
+// =============================================================================
+:root {
+  --brand-blue: #00a0a5;
+  --brand-orange: #f47523;
+  --text-iron: #686868;
+}
+
+$--bs-breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+// =============================================================================
+// MIXINS
+// =============================================================================
+@mixin content-wrapper($size) {
+  max-width: map-get($--bs-breakpoints, $size);
+}
+
+// =============================================================================
+// UTILITY CLASSES
+// =============================================================================
+
+// Generate content wrapper classes
+@each $size, $width in $--bs-breakpoints {
+  .content-wrapper-#{$size} {
+    @include content-wrapper($size);
+  }
+}
+
+// Color utilities
+.bg-blue {
+  background-color: var(--brand-blue) !important;
+}
+
+.bg-orange {
+  background-color: var(--brand-orange) !important;
+}
+
+.text-blue {
+  color: var(--brand-blue) !important;
+}
+
+.text-orange {
+  color: var(--brand-orange) !important;
+}
+
+.text-iron {
+  color: var(--text-iron) !important;
+}
+
+// =============================================================================
+// BASE STYLES
+// =============================================================================
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+// Scroll offset for sticky navbar
+#about,
+#tool-box,
+#contact {
+  scroll-margin-top: 56px;
+}
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+.heading {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--bs-black);
+}
+
+.sub-heading {
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+// =============================================================================
+// LINKS
+// =============================================================================
+a {
+  color: var(--bs-white) !important;
+  text-decoration: none !important;
+
+  &:hover {
+    color: var(--bs-black) !important;
+    background-color: var(--bs-white) !important;
+  }
+}
+
+// =============================================================================
+// SVG
+// =============================================================================
+
+// SVG Icons
+.svg-icon {
+  height: 50px;
+}
+
+.arrow-svg {
+  width: 180px;
+}
+
+// =============================================================================
+// MEDIA QUERIES
+// =============================================================================
+
+// Large devices and below (≤992px)
+@media (max-width: 992px) {
+  .svg-icon {
+    height: 80px;
+  }
+}
+
+// Medium devices and below (≤768px)
+@media (max-width: 768px) {
+  .svg-icon {
+    height: 60px;
+  }
+}
+
+// Small devices and below (≤576px)
+@media (max-width: 576px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .arrow-svg {
+    width: 120px;
+  }
+}

@@ -1,0 +1,23 @@
+import { FC } from "react";
+import Arrow from "../../svg/arrow";
+import { SectionProps } from "./Section.interface";
+import "./Section.style.scss";
+
+export const Section: FC<SectionProps> = (props) => {
+  return (
+    <div
+      id={props.id}
+      className={`section d-flex flex-column ${
+        props.backgroundColor || "bg-white"
+      }`}
+    >
+      <div className="d-flex justify-content-center">
+        <Arrow fill={props.fill || "white"} />
+      </div>
+
+      <div className="d-flex justify-content-center align-items-center flex-grow-1 p-4">
+        {props.children}
+      </div>
+    </div>
+  );
+};
