@@ -121,14 +121,22 @@ a {
   width: 180px;
 }
 
+.textbox {
+  max-width: 332px;
+}
+
 // =============================================================================
 // MEDIA QUERIES
 // =============================================================================
 
 // Large devices and below (≤992px)
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .svg-icon {
     height: 80px;
+  }
+
+  .textbox {
+    max-width: 100%;
   }
 }
 
@@ -146,6 +154,13 @@ a {
   }
 
   .arrow-svg {
-    width: 120px;
+    width: 180px;
   }
+}
+
+.test {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 10px;
+  width: 100%;
 }

@@ -6,11 +6,14 @@ import { About } from "./components/About/About";
 import { Section } from "./components/Section/Section";
 import { Navigation } from "./components/Navigation/Navigation";
 import { navLinks } from "./data/navlinks";
+import { AreaOfExpertise } from "./components/AreaOfExpertise/AreaOfExpertise";
+
 
 function App() {
   return (
     <>
       <Navigation links={navLinks} />
+     
       <Section id="about" backgroundColor={"bg-white"} fill={"#00a0a5"}>
         <About />
       </Section>

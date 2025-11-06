@@ -1,36 +1,34 @@
 import { FC } from "react";
+import { AreaOfExpertise } from "../AreaOfExpertise/AreaOfExpertise";
+import { TypingName } from "../animations/Name/Name";
+import { AboutMe } from "./AboutMe";
 
 export const About: FC = () => {
   return (
-    <div className="container-fluid p-0 content-wrapper-md">
+    <div className="container-fluid  p-0 h-100 content-wrapper-xl">
       <div className="row">
-        <div className="col-12 p-3">
-          <h1 className="heading">Frontend-udvikler med flair for design</h1>
+        <div className="col">
+          <div className="d-flex flex-column align-items-center">
+            <div className="heading bg-black text-white w-100 p-3">
+              <TypingName />
+            </div>
+
+            <div className="w-100 display-6 mt-2 mb-4">
+              &lt;Frontend-udvikler med flair for design&gt;
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="row">
-        <div className="col-12 col-md-auto">
-          <div className="d-flex justify-content-center align-items-center">
-            <img
-              src="./assets/img/profile.png"
-              alt="Profilbillede"
-              className="rounded-circle"
-              width={"180px"}
-              height={"180px"}
-            />
+        <div className="col mb-4 mb-lg-0">
+          <div className="d-flex align-items-end h-100">
+            <AreaOfExpertise />
           </div>
         </div>
-        <div className="col">
-          <div className="d-flex align-content-center justify-content-center flex-column w-100 h-100 p-3">
-            <p>
-              Er døbt Charley Nordahn og har i 38 år haft begge ben forankret i
-              den jyske muld. Jeg er en kvalitetsbevidst frontend-udvikler med
-              flair for design og stor faglig stolthed, som er drevet af at
-              udvikle brugervenlige digitale løsninger. Jeg modtager feedback
-              med tålmodighed og åbent sind, og vigtigst af alt motiveret af
-              succesoplevelser.
-            </p>
-          </div>
+
+        <div className="col-12 col-lg-auto">
+          <AboutMe />
         </div>
       </div>
     </div>

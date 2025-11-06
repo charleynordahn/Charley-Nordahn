@@ -1,0 +1,26 @@
+.typing::after {
+  content: "";
+  display: inline-block;
+  width: 0.1em;
+  height: 1.1em;
+  vertical-align: top;
+  margin-left: 0.1em;
+  background: var(--bs-white);
+}
+
+/* blink only when done */
+.typing.done::after {
+  animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
