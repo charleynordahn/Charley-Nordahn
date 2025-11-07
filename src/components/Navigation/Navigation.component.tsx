@@ -9,6 +9,8 @@ export const Navigation: FC<NavProps> = (props) => {
           {link.label}
         </a>
       ))}
+		<button>Download CV</button>
+		<button>LinkedIn</button>
     </nav>
   );
 };
