@@ -1,0 +1,15 @@
+.svg-icon {
+  height: 50px;
+}
+
+@media (max-width: 991px) {
+  .svg-icon {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .svg-icon {
+    height: 60px;
+  }
+}

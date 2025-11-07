@@ -1,8 +1,8 @@
+import { ToolProps } from "../components/ToolBox/Tool/Tool.interface.";
 import { HtmlIcon } from "../svg/icons/HtmlIcon";
 import { CssIcon } from "../svg/icons/CssIcon";
 import { JsIcon } from "../svg/icons/JsIcon";
 import { TsIcon } from "../svg/icons/TsIcon";
-import { ToolProps } from "../components/ToolBox/Tool/Tool.interface.";
 import { ReactIcon } from "../svg/icons/ReactIcon";
 import { PlaywrightIcon } from "../svg/icons/PlaywrightIcon";
 import { FigmaIcon } from "../svg/icons/FigmaIcon";

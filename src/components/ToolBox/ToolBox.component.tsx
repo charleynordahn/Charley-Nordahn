@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { Tool } from "./Tool/Tool";
 import { ToolBoxProps } from "./ToolBox.interface";
-import { AreaOfExpertise } from "../AreaOfExpertise/AreaOfExpertise";
+import {Tool} from "./Tool/Tool.component";
+
 
 export const ToolBox: FC<ToolBoxProps> = ({ toolIcons }) => {
   return (

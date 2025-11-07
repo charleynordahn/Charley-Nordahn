@@ -1,6 +1,12 @@
 // Section
 .section {
+  min-height: 50vh;
 }
+
+.arrow-svg {
+  width: 180px;
+}
+
 
 @media (max-width: 992px) {
   .section {

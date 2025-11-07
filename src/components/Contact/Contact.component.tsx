@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FollowMe } from "../buttons/FollowMe/FollowMe";
+import { FollowMe } from "../buttons/FollowMe/FollowMe.component";
 
 export const Contact: FC = () => {
   return (

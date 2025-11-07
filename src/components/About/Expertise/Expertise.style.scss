@@ -1,0 +1,7 @@
+.expertise-wrapper {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 1rem;
+  width: 100%;
+}

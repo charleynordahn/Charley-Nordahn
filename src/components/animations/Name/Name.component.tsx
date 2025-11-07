@@ -5,8 +5,8 @@ export const TypingName: React.FC = () => {
   const [text, setText] = useState("");
   const [done, setDone] = useState(false);
 
-  const typeSpeed = 160;
-  const deleteSpeed = 120;
+  const typeSpeed = 140;
+  const deleteSpeed = 110;
 
   useEffect(() => {
     const sleep = (ms: number) =>
@@ -15,7 +15,7 @@ export const TypingName: React.FC = () => {
       let currentText = "";
 
       // Step 1: type typo "Charlie"
-      const typo = "Charlie";
+      const typo = "<h1>Charlie";
       for (let i = 0; i < typo.length; i++) {
         currentText += typo[i];
         setText(currentText);
@@ -41,7 +41,7 @@ export const TypingName: React.FC = () => {
       await sleep(typeSpeed);
 
       // Step 4: type rest of name " Nordahn"
-      const rest = " Nordahn";
+      const rest = " Nordahn</h1>";
       for (let i = 0; i < rest.length; i++) {
         currentText += rest[i];
         setText(currentText);

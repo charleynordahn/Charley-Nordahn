@@ -1,12 +1,11 @@
 import "./styles/custom.scss";
-import { ToolBox } from "./components/ToolBox/ToolBox";
+import { ToolBox} from "./components/ToolBox/ToolBox.component";
 import { toolIcons } from "./data/toolIcons";
-import { Contact } from "./components/Contact/Contact";
-import { About } from "./components/About/About";
-import { Section } from "./components/Section/Section";
-import { Navigation } from "./components/Navigation/Navigation";
+import { Contact } from "./components/Contact/Contact.component";
+import { About } from "./components/About/About.component";
+import { Section } from "./components/Section/Section.component";
+import { Navigation } from "./components/Navigation/Navigation.component";
 import { navLinks } from "./data/navlinks";
-import { AreaOfExpertise } from "./components/AreaOfExpertise/AreaOfExpertise";
 
 
 function App() {
@@ -14,8 +13,8 @@ function App() {
     <>
       <Navigation links={navLinks} />
      
-      <Section id="about" backgroundColor={"bg-white"} fill={"#00a0a5"}>
-        <About />
+      <Section id="about" backgroundColor={"bg-white"} hasArrow={false}>
+        <About/>
       </Section>
 
       <Section id="tool-box" backgroundColor={"bg-orange"}>

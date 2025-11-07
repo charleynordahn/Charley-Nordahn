@@ -68,7 +68,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 // Scroll offset for sticky navbar
@@ -112,14 +112,8 @@ a {
 // SVG
 // =============================================================================
 
-// SVG Icons
-.svg-icon {
-  height: 50px;
-}
 
-.arrow-svg {
-  width: 180px;
-}
+
 
 .textbox {
   max-width: 332px;
@@ -156,11 +150,4 @@ a {
   .arrow-svg {
     width: 180px;
   }
-}
-
-.test {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  row-gap: 10px;
-  width: 100%;
 }

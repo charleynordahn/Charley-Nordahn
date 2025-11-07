@@ -1,0 +1,63 @@
+// Variables
+$wrapper-height-desktop: 332px;
+$wrapper-height-tablet: 200px;
+$wrapper-height-mobile: 210px;
+
+$img-height-desktop: 330px;
+$img-height-tablet: 200px;
+$img-height-mobile: 250px;
+
+// Breakpoints
+$breakpoint-md: 991px;
+$breakpoint-sm: 576px;
+
+.resume-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.profile-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: $wrapper-height-desktop;
+  width: 100%;
+  background: #d3d4d6;
+
+  @media (max-width: $breakpoint-md) {
+    height: $wrapper-height-tablet;
+    min-width: $wrapper-height-tablet;
+    max-width: 200px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    height: $wrapper-height-mobile;
+    max-width: 100%;
+  }
+}
+
+.profile-img {
+  position: absolute;
+  right: -5px;
+  bottom: -30px;
+  height: $img-height-desktop;
+
+  @media (max-width: $breakpoint-md) {
+    bottom: -20px;
+    height: $img-height-tablet;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    bottom: -60px;
+    height: $img-height-mobile;
+  }
+}

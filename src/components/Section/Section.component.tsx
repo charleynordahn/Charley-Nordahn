@@ -1,9 +1,9 @@
-import { FC } from "react";
+import {FC} from "react";
 import Arrow from "../../svg/arrow";
 import { SectionProps } from "./Section.interface";
 import "./Section.style.scss";
 
-export const Section: FC<SectionProps> = (props) => {
+export const Section: FC<SectionProps> = ( props) => {
   return (
     <div
       id={props.id}
@@ -11,10 +11,12 @@ export const Section: FC<SectionProps> = (props) => {
         props.backgroundColor || "bg-white"
       }`}
     >
-      <div className="d-flex justify-content-center">
-        <Arrow fill={props.fill || "white"} />
-      </div>
-
+		{(props.hasArrow ?? true) ?
+			<div className="d-flex justify-content-center">
+				<Arrow fill={props.fill || "white"} />
+			</div>
+			: null
+		}
       <div className="d-flex justify-content-center align-items-center flex-grow-1 p-4">
         {props.children}
       </div>
