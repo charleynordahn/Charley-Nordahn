@@ -3,7 +3,7 @@ export const areaOfExpertise = [
 		id: 1,
 		title: "Visuelt orienteret",
 		description:
-			"Er hurtig til at visualisere tanker og idéer, der kan omsættes til konkrete løsninger.",
+			"Hurtig til at visualisere tanker og idéer, der kan omsættes til konkrete løsninger.",
 	},
 	{
 		id: 2,
@@ -14,6 +14,6 @@ export const areaOfExpertise = [
 		id: 3,
 		title: "Trives også med rugbrødsopgaver",
 		description:
-			"Er god til mange typer opgaver, også dem der kræver gentagelse og tålmodighed.",
+			"God til mange typer opgaver, også dem der kræver gentagelse og tålmodighed.",
 	},
 ];

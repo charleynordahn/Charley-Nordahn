@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Name.style.scss";
+import "./TypingName.style.scss";
 
 export const TypingName: React.FC = () => {
   const [text, setText] = useState("");
@@ -56,6 +56,12 @@ export const TypingName: React.FC = () => {
   }, []);
 
   return (
-    <div className={`text-white typing ${done ? "done" : ""}`}>{text}</div>
+    <h1
+      className={`text-white mb-0 headline bg-black w-100 p-3 typing ${
+        done ? "done" : ""
+      }`}
+    >
+      {text}
+    </h1>
   );
 };

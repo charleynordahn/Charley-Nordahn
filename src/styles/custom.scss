@@ -107,7 +107,7 @@ a {
 
   &:hover {
     color: var(--bs-black) !important;
-    background-color: var(--bs-white) !important;
+    background-color: var(--brand-blue) !important;
   }
 }
 
@@ -152,8 +152,85 @@ a {
   }
 }
 
-
 .border-12 {
   border-width: 12px !important;
   border-left-style: solid !important;
+}
+
+.btn-brand {
+  background-color: var(--brand-blue) !important;
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+  color: var(--bs-white) !important;
+}
+
+.navigation-wrapper {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.sub {
+  background-color: black;
+  display: flex;
+  gap: 1rem;
+}
+
+// Medium devices and below (≤768px)
+@media (max-width: 768px) {
+  .sub {
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 60px;
+    width: 100%;
+    height: 0;
+    transition: height 0.15s ease-in-out;
+    overflow: hidden;
+    font-size: 1.2rem;
+  }
+
+  .sub.open {
+    height: 45vh;
+  }
+}
+
+.burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--bs-white);
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.wile {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transition: top 0.15s ease-in-out;
+}
+
+.dog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.O {
+  top: 0;
+}
+
+.C {
+  top: -40px;
 }

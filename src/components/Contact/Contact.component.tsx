@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { FollowMe } from "../buttons/FollowMe/FollowMe.component";
+import { SocialLink } from "../buttons/FollowMe/SoicalLink.component";
+
 
 export const Contact: FC = () => {
   return (
-    <div className="container-fluid p-0 content-wrapper-md text-white">
+    <div id="contacts" className="container-fluid p-0 content-wrapper-md text-white">
       <div className="row">
         <div className="col-12 col-sm">
           <div className="d-flex justify-content-center">
@@ -24,7 +25,7 @@ export const Contact: FC = () => {
                 </a>
               </li>
               <li className="mt-3">
-                <FollowMe />
+                <SocialLink />
               </li>
             </ul>
           </div>

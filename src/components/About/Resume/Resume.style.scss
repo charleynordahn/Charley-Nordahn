@@ -1,11 +1,11 @@
 // Variables
-$wrapper-height-desktop: 332px;
+$wrapper-height-desktop: 320px;
 $wrapper-height-tablet: 200px;
 $wrapper-height-mobile: 210px;
 
 $img-height-desktop: 330px;
-$img-height-tablet: 200px;
-$img-height-mobile: 250px;
+$img-height-tablet: 210px;
+$img-height-mobile: 270px;
 
 // Breakpoints
 $breakpoint-md: 991px;
@@ -57,7 +57,9 @@ $breakpoint-sm: 576px;
   }
 
   @media (max-width: $breakpoint-sm) {
-    bottom: -60px;
+    bottom: -65px;
     height: $img-height-mobile;
+    left: 75%;
+    transform: translateX(-75%);
   }
 }

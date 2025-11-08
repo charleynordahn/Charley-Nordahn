@@ -1,8 +1,13 @@
+#headline .headline {
+  font-size: clamp(1.2rem, 5vw, 5rem);
+  font-weight: bolder;
+}
+
 .typing::after {
   content: "";
   display: inline-block;
   width: 0.1em;
-  height: 1.3em;
+  height: 1.1em;
   vertical-align: top;
   margin-left: 0.1em;
   background: var(--bs-white);
