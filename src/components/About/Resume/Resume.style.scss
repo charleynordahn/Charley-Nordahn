@@ -31,7 +31,7 @@ $breakpoint-sm: 576px;
   overflow: hidden;
   height: $wrapper-height-desktop;
   width: 100%;
-  background: #d3d4d6;
+  background: var( --brand-grey);
 
   @media (max-width: $breakpoint-md) {
     height: $wrapper-height-tablet;
