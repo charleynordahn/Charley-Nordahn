@@ -6,9 +6,9 @@ export const Resume: FC = () => {
     <div className="resume-wrapper">
       <div className={"profile-img-wrapper"}>
         <img
-          src="./assets/img/profile.png"
-          alt="Profilbillede"
-          className="profile-img "
+          src="/assets/img/profile.png"
+          alt="profile"
+          className="profile-img"
         />
       </div>
 

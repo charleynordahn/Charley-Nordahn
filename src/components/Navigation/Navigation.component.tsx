@@ -13,7 +13,14 @@ export const Navigation: FC<NavProps> = (props) => {
   return (
     <nav className="navigation-wrapper bg-black p-3 position-sticky top-0 start-0 z-3 position-relative">
       <div>
-        <button className="btn btn-brand btn-sm me-2">Download CV</button>
+        <a
+          href="/assets/pdf/cv-charley-nordahn.pdf"
+          download="cv-charley-nordahn.pdf"
+          className="btn btn-brand btn-sm me-2"
+        >
+          Download CV
+        </a>
+
         <SocialLink navLink />
       </div>
       <button
